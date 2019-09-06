@@ -1,1 +1,437 @@
-/* You can add global styles to this file, and also import other style files */
+.dashboard {
+    padding-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    #newRequestLink {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        color: #2a6496;
+        font-size: 150%;
+        vertical-align: bottom;
+        cursor: pointer;
+    }
+    #newDraw {
+        height: 30px;
+        width: 30px
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    #newRequestLink {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        color: #2a6496;
+        font-size: 150%;
+        vertical-align: bottom;
+        cursor: pointer;
+    }
+    #newDraw {
+        height: 30px;
+        width: 30px
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    #newRequestLink {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        color: #2a6496;
+        font-size: 86%;
+        vertical-align: bottom;
+        cursor: pointer;
+    }
+    #newDraw {
+        height: 20px;
+        width: 20px
+    }
+    .form-control {
+        height: 30px;
+        font-size: 1.2rem;
+    }
+    .right-addon .glyphicon {
+        right: 0px;
+        font-size: 11px
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    #newRequestLink {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        color: #2a6496;
+        font-size: 110%;
+        vertical-align: bottom;
+        cursor: pointer;
+    }
+    #newDraw {
+        height: 25px;
+        width: 25px
+    }
+    .form-control {
+        height: 35px;
+        font-size: 1.3rem;
+    }
+    .right-addon .glyphicon {
+        right: 0px;
+        font-size: 12px
+    }
+}
+
+@media screen and (min-width: 1401px) {
+    #newRequestLink {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        color: #2a6496;
+        font-size: 130%;
+        font-weight: 500;
+        vertical-align: bottom;
+        cursor: pointer;
+    }
+    #newDraw {
+        height: 30px;
+        width: 30px
+    }
+    .form-control {
+        height: 40px;
+        font-size: 1.3rem;
+    }
+    .right-addon .glyphicon {
+        right: 0px;
+        font-size: 15px
+    }
+}
+
+.blueribbon {
+    margin-top: 35px;
+    height: 40px;
+    background-color: #0078d4;
+    box-shadow: 1ch;
+    box-shadow: 1px 3px #888888;
+}
+
+.left-pane {
+    margin-top: 3px;
+    background-color: #dce1e5;
+    height: 700px;
+    overflow-x: auto;
+}
+
+#left-pane-lables {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#downloads {
+    text-align: right;
+}
+
+#graphContent {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.modal-header {
+    background: #768a93;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #f2f2f2;
+    padding: 5px 15px;
+    height: 40px;
+    line-height: 1.4;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+#popup-text {
+    color: #747778;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+#popup-text-min {
+    color: #034;
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+
+.popup-content-2{
+    margin-top:30px;
+}
+.popup-content-3{
+    border: 1px solid lightblue;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+.modal-lg {
+    max-width: 80% !important;
+}
+
+.styled-select {
+    width: 95%;
+    height: 34px;
+    background: url("assets/images/dropdown.png") no-repeat right;
+    cursor: pointer;
+}
+.w3-orange{
+    background-color: #F48024;
+    color:white;
+    weight: bold;
+    font-weight: 12px;
+    border:none;
+    width:30px;
+    height:30px;
+}
+
+.w3-orange value{
+    color:white;
+    weight: bold;
+    font-weight: 12px;
+}
+.modal-xlg {
+    width: 1100px;
+}
+
+.popup-row-2{
+    width: 95%;
+    margin:auto;
+    max-height:250px !important;
+    overflow-y: scroll;
+
+}
+
+.bdr-right{
+    border-right: 1px solid #39b2db;
+}
+
+.popup-info{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    background: #f6f6f6;
+    color: hsl(7, 89%, 29%);
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 4px;
+    line-height: 19px;
+    border: 2px solid #e5e5e5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.popup-content-1{
+    margin-top:20px;
+}
+
+.popup-table{
+    width:100%;
+    
+}
+
+.popup-table tr td{
+    text-align: center;
+    height: 35px;
+    font-size:12px;
+    color: #085382;
+    font-weight: 700;
+    padding: 5px;
+
+}
+.popup-table tr{
+    border-bottom: 1px dotted lightgray;
+}
+.popup-table-head{
+    height:40px;
+    border: 1px solid #39b2db;
+}
+
+.popup-table-head th{
+    border-left: 1px dotted white;
+    text-align: center;
+    background-color: #39b2db;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.popup-table tr td .fa-trash{
+    color: #8B0000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup-table tr td .fa-edit{
+    color: #06c936;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup-table tr td .fa-plus-square {
+    font-size: 18px;
+    float:left;
+    cursor: pointer;
+}
+.popup-table tr td .fa-minus-square {
+    font-size: 18px;
+    float:left;
+    cursor: pointer;
+}
+
+.orange-row{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-top:20px;
+     
+}
+
+.orange-row .fa-plus-square{
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+.orange-row .orange{
+    color:orange;
+    width:30px;
+    height:30px;
+}
+
+.orange-row .fa-window-close{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.popup-row{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+#popup-input {
+    height: 35px;
+    cursor: text;
+    border: 1px dotted #747778;
+    padding: 5px;
+    outline: none;
+    width: 75%;
+    font-size: 12px;
+}
+
+.innertable .ui-table .ui-table-wrapper table .ui-table-thead tr th{
+    height:35px;
+    background-color: #d7edfc;
+    text-align: center;
+    
+}
+.innertable .ui-table .ui-table-wrapper table .ui-table-tbody tr td{
+    height:35px;
+    background-color: #d7edfc;
+    text-align: center;
+}
+.innertable .ui-table .ui-table-wrapper table .ui-table-tbody tr:nth-child(1){
+    display: none;
+}
+
+.innertable .ui-table .ui-table-wrapper table .ui-table-thead tr th:nth-child(1){
+    width:38px !important;
+}
+
+.fa-dot-circle-o{
+    font-size:20px;
+}
+
+#popup-input-1 {
+    height: 35px;
+    cursor: text;
+    border: 1px dotted #747778;
+    padding: 5px;
+    outline: none;
+    width: 100%;
+    font-size: 12px;
+}
+
+.popup-input-1 {
+    height: 35px;
+    cursor: text;
+    border: 1px dotted #747778;
+    padding: 5px;
+    outline: none;
+    width: 100%;
+    font-size: 12px;
+}
+
+.nolabel {
+    padding-top: 150px;
+    text-align: center;
+    font-size: 120px;
+    font-weight: 500;
+    color: #2a6496;
+}
+
+.downbtn {
+    background-color: #06c936;
+    border-color: #06c936;
+    height: 30px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#mycanvas {
+    height: 550px;
+    border: 2px solid lightslategray;
+    margin-top: 10px;
+}
+
+.canvas {}
+
+/* style icon */
+
+.bottom {
+    border-bottom: 1.5px solid #ccc;
+}
+
+.search {
+    margin-top: 20px;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+/* style glyph */
+
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+.card {
+    margin-top: 90px;
+}
+
+.card1 {
+    margin-top: 20px;
+    border-left: 1px;
+}
+
+.right-addon input {
+    padding-right: 30px;
+}

@@ -1,0 +1,272 @@
+<div class="row" style="margin-top:20px;margin-left:10px;">
+  <div class="col-md-3">
+    <label id="popup-text">Project Name</label>&nbsp;
+    <label style="color:red; font-weight:bold">*</label><br>
+    <input id="popup-input" type="text" placeholder="Enter Project Name">
+  </div>
+  <div class="col-md-3">
+    <label id="popup-text">Client Name</label>&nbsp;
+    <label style="color:red; font-weight:bold">*</label><br>
+    <input id="popup-input" type="text" placeholder="Enter Client Name">
+  </div>
+  <div class="col-md-3">
+    <label id="popup-text">Software Methodology</label>&nbsp;
+    <label style="color:red; font-weight:bold">*</label><br>
+    <div class="styled-select">
+      <select id="popup-input">
+        <option>---- Select a Methodology ---</option>
+        <option>Waterfall</option>
+        <option>Agile</option>
+        <option>V-Shaped</option>
+        <option>Prototype</option>
+        <option>Spiral</option>
+        <option>Iterative Incremental</option>
+        <option>Big Bang</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label id="popup-text">VSM Generation Level</label>&nbsp;
+    <label style="color:red; font-weight:bold">*</label><br>
+    <div class="styled-select">
+      <select id="popup-input">
+        <option>---- Select a Level ---</option>
+        <option>Release</option>
+        <option>Process</option>
+      </select>
+    </div>
+  </div>
+</div>
+<!-- <div class="row popup-content-2">
+  <div class="col-md-8 offset-md-1">
+    <label id="popup-text">Please select a Level to generate VSM: </label>&nbsp;
+    <label style="color:red; font-weight:bold">*</label>&nbsp;&nbsp;
+    <label class="radio-inline" id="popup-text">
+      <input type="radio" name="optradio" checked>&nbsp;Release Level
+      <span class="checkmark"></span>
+    </label>&nbsp;&nbsp;
+    <label class="radio-inline" id="popup-text">&nbsp;
+      <input type="radio" name="optradio" checked>&nbsp;Process Level
+      <span class="checkmark"></span>
+    </label>
+  </div>
+</div> -->
+<!-- <div class="row popup-content-1">
+    <div class="col-md-5 offset-md-1 bdr-right">
+      <label id="popup-text">Release Name</label>&nbsp;
+      <label style="color:red; font-weight:bold">*</label><br>
+      <input id="popup-input" type="text" placeholder="Enter Project Name">
+    </div>
+    <!-- <div class="col-md-5">
+      &nbsp;&nbsp;<span class="popup-info"><span>i</span></span>
+      <span>Time should be in hours format only</span>
+    </div> -->
+<!-- </div> -->
+<div class="row popup-row">
+  <div class="col-md-10 offset-md-1 popup-content-3">
+    <div class="row popup-row">
+      <div class="col-md-3">
+        <label id="popup-text-min">Process</label>&nbsp;
+        <label style="color:red; font-weight:bold">*</label><br>
+        <div class="styled-select">
+          <select class="popup-input-1" id="process">
+            <option selected>---- Select a Process ---</option>
+            <option>Plan</option>
+            <option>Design</option>
+            <option>Develop</option>
+            <option>Test</option>
+            <option>Deployment</option>
+            <option>Implementation</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label id="popup-text-min">Activity</label>&nbsp;
+        <label style="color:red; font-weight:bold">*</label><br>
+        <input class="popup-input-1" id="activity" type="text" placeholder="Enter a Activity">
+      </div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3">
+            <label id="popup-text-min">Processing Time</label>&nbsp;
+            <label style="color:red; font-weight:bold">*</label><br>
+            <input class="popup-input-1" id="processingtime" type="text" placeholder="">
+          </div>
+          <div class="col-md-3">
+            <label id="popup-text-min">Elapsed Time</label>&nbsp;
+            <label style="color:red; font-weight:bold">*</label><br>
+            <input class="popup-input-1" id="elapsedtime" type="text" placeholder="">
+          </div>
+          <div class="col-md-3">
+            <label id="popup-text-min">Wait Time</label>&nbsp;
+            <label style="color:red; font-weight:bold">*</label><br>
+            <input class="popup-input-1" id="waittime" type="text" placeholder="">
+          </div>
+          <div class="col-md-3">
+            <label id="popup-text-min">Weighted Time</label>&nbsp;
+            <label style="color:red; font-weight:bold">*</label><br>
+            <input class="popup-input-1" id="weightedtime" type="text" placeholder="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1 orange-row">
+        <a class="fa fa-plus-square orange" style="color:#e75607;" (click)="AddActivity($event)"></a>&nbsp;&nbsp;
+        <a class="fa fa-window-close orange" style="color:#e75607;" (click)="changeDetail()"></a>
+      </div>
+    </div>
+    <div class="row popup-row" style="margin-top:20px;">
+      <div class="col-md-3">
+        <label id="popup-text-min">Immediate Preceeding Activity</label>&nbsp;
+        <label style="color:red; font-weight:bold">*</label><br>
+        <div class="styled-select">
+          <select class="popup-input-1" id="process">
+            <option selected>---- Select an Activity ---</option>
+            <option>None</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label id="popup-text-min">Parallel Activity</label>&nbsp;
+        <label style="color:red; font-weight:bold">*</label><br>
+        <div class="styled-select">
+          <select class="popup-input-1" id="process">
+            <option selected>---- Select a Parallel Activity ---</option>
+            <option>None</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label id="popup-text-min">Overlapping Activity</label>&nbsp;
+        <label style="color:red; font-weight:bold">*</label><br>
+        <div class="styled-select">
+          <select class="popup-input-1" id="process">
+            <option selected>---- Select an Overlapping Activity ---</option>
+            <option>None</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="popup-row-2 center">
+  <table class="popup-table">
+    <tr class="popup-table-head">
+      <th>Process Name</th>
+      <th>Processing Time</th>
+      <th>Elapsed Time</th>
+      <th>Wait Time</th>
+      <th>Weighted Time</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td><a class="fa fa-plus-square" (click)="changeDetail()"></a>Plan</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td><i class="fa fa-trash"></i></td>
+    </tr>
+    <tr *ngIf="">
+
+    </tr>
+    <tr>
+      <td><i class="fa fa-plus-square" (click)="changeDetail()"></i>Design</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td><i class="fa fa-trash"></i></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-plus-square" (click)="changeDetail()"></i>Develop</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td><i class="fa fa-trash"></i></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-plus-square" (click)="changeDetail()"></i>Test</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td><i class="fa fa-trash"></i></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-plus-square" (click)="changeDetail()"></i>Deployment</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td><i class="fa fa-trash"></i></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-plus-square" (click)="changeDetail()"></i>Maintenance</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td>52.33</td>
+      <td><i class="fa fa-trash"></i></td>
+    </tr>
+  </table>
+</div> -->
+<div class="popup-row-2 center">
+  <p-table class="popup-table" [columns]="cols" [value]="process" dataKey="ProcessName" (onRowExpand)="onRowExpand()"
+    (onRowCollapse)="onRowCollapse()" [expandedRowKeys]="expandedRows">
+    <ng-template pTemplate="header" let-columns>
+      <tr class="popup-table-head">
+        <th style="width: 3em"></th>
+        <th *ngFor="let col of columns">
+          {{col.header}}
+        </th>
+        <th>
+          Actions
+        </th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-expanded="expanded" let-columns="columns">
+      <tr>
+        <td>
+          <a href="#" [pRowToggler]="rowData">
+            <i [ngClass]="expanded ? 'fa fa-minus-square' : 'fa fa-plus-square'"></i>
+          </a>
+        </td>
+        <td *ngFor="let col of columns">
+          {{rowData[col.field]}}
+        </td>
+        <td><i class="fa fa-trash"></i></td>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="rowexpansion" let-rowData let-columns="columns">
+      <p-table class="innertable" [style]="{'width':'1280px'}" [value]="rowData.Activities">
+        <ng-template pTemplate="header">
+          <tr [style]="{'color':'#b1ddfa','height':'35px'}">
+            <th [style]="{'max-width':'36px'}"></th>
+            <th>Activity Name</th>
+            <th>Processing Time</th>
+            <th>Elapsed Time</th>
+            <th>Wait Time</th>
+            <th>Weighted Time</th>
+            <th>Actions</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-rowIndex="rowIndex">
+          <tr>
+            <td>
+              <a href="#" [pRowToggler]="rowData">
+                <i class="fa fa-dot-circle-o"></i>
+              </a>
+            </td>
+            <td>{{rowData.ActivityName}}</td>
+            <td>{{rowData.ProcessingTime}}</td>
+            <td>{{rowData.ElapsedTime}}</td>
+            <td>{{rowData.WaitTime}}</td>
+            <td>{{rowData.WeightedTime}}</td>
+            <td><i class="fa fa-edit"></i> &nbsp;&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </ng-template>
+  </p-table>
+</div>
